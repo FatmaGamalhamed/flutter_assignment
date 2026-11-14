@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'about_page.dart';
 
@@ -41,6 +40,17 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
+            const SizedBox(height: 12),
+
+            const Text(
+              'Home Page',
+              style: TextStyle(
+                fontSize: 17,
+                color: Color(0xFF4778BD),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
             const SizedBox(height: 20),
 
             ClipRRect(
@@ -76,7 +86,7 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blue.withOpacity(0.07),
+                    color: Colors.blue.withValues(alpha: 0.07),
                     blurRadius: 15,
                     offset: const Offset(0, 5),
                   ),
